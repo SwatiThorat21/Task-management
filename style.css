@@ -54,11 +54,11 @@ body {
     height: 100%;
     width: 18%;
     position: fixed;
-    /* z-index: 1; */
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: #414061;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     transition: 0.5s;
     padding-top: 4rem;
 
@@ -148,6 +148,26 @@ input[type="text"]:focus {
   flex-direction: column;
   gap: 0.5rem;
 }
+
+.container {
+  width: min(99%, 90.5rem);
+  margin-inline: auto;
+  overflow-x: scroll;
+  min-height: 85%;
+} 
+
+#cards-container {
+  display: flex;
+  flex-wrap:nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.85rem;
+} 
+
+::placeholder {
+  color:black;
+}
+
 
 
 

@@ -39,7 +39,7 @@
         </div>
       </header>
 
-      <div id="hamburger" class="hamburger">
+      <div id="hamburger" class="hamburger" style="display: none;">
         <span id="sidebar-close">&times;</span>
         <p class="board-title">Add a Task Boards</p>
         <ul id="boards-list">
@@ -51,6 +51,24 @@
             <button id="add-board-button">Add Board</button>
         </div>
     </div>
+
+    <!-- <div id="card-context-menu" class="context-menu"> -->
+      <!-- Right-click context menu on cards. -->
+      <!-- <ul>
+          <li id="card-context-menu-delete">Delete</li>
+          <li id="card-context-menu-clear">Clear</li>
+          <li id="card-context-menu-duplicate">Copy</li>
+      </ul>
+  </div> -->
+
+  <div class="container" id="main-container">
+      <div id="cards-container">
+          <div id="add-card">
+              <input maxlength="128" type="text" id="add-card-text" name="add-card" placeholder="Add Card..." autofocus>
+              <button id="add-card-button" class="plus-button">+</button>
+          </div>
+      </div>
+  </div>
 
 
     
