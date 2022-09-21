@@ -45,9 +45,10 @@ body {
 }
 
 .header-icons {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   cursor: pointer;
-  letter-spacing: 1ch;
+  letter-spacing: 1.5ch;
+  display: flex;
 }
 
 .hamburger {
@@ -117,7 +118,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   border: none;
-  border-bottom: 2px solid blueviolet;
+  border-bottom: 2px solid black;
   outline: none;
 }
 
@@ -152,7 +153,7 @@ input[type="text"]:focus {
 .container {
   width: min(99%, 90.5rem);
   margin-inline: auto;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
   min-height: 85%;
 } 
 
@@ -166,8 +167,42 @@ input[type="text"]:focus {
 
 ::placeholder {
   color:black;
+  font-family:"Ubuntu", sans-serif;
 }
 
+.searchBar{
+width: 100%;
+display: flex;
+align-items: center;
+padding: 0px 8px;
+border-radius: 60px;
+background: rgba(255, 255, 255, 0.4);
+margin: 2px 20px 12px 10px ;
+}
+
+.searchBar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 5px 15px;
+  font-size: 1rem;
+  color: #cac7ff;
+  margin: 0;
+}
+
+.searchBar button i{
+  width: 25px;
+}
+
+.searchBar button{
+  border: 0;
+  border-radius: 50%;
+  width: 35px;
+  height: 37px;
+  background: #58629b;
+  cursor: pointer;
+}
 
 
 
