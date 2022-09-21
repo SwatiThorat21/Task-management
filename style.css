@@ -108,6 +108,7 @@ input[type="text"] {
   border-bottom: 2px solid black;
   font-size: 1em;
   background-color: transparent;
+  color: #f3f3f3;
 }
 
 input[type="text"]:focus {
@@ -200,5 +201,36 @@ margin: 2px 20px 12px 10px ;
 }
 
 
+
+.parent-card > ul {
+  max-height: 20rem;
+  overflow-y: auto;
+  padding-left: 0;
+  list-style: none;
+}
+
+.parent-card > span {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parent-card > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background-color: #f3f3f3;
+  padding: 0.5rem;
+  margin-right: 0.5em;
+  margin-bottom: 0.7rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px rgba(107, 107, 107, 0.63);
+}
+
+.parent-card > ul > li > span {
+  letter-spacing: 0.7rem;
+}
 
 
