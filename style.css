@@ -58,17 +58,22 @@ input[type="text"]:focus {
 .container {
   width: min(99%, 90.5rem);
   margin-inline: auto;
-  /* overflow-x: scroll; */
   min-height: 85%;
 } 
 
-#cards-container {
+#add-card {
   display: flex;
   flex-wrap:nowrap;
   flex-direction: row;
   align-items: flex-start;
-  gap: 0.85rem;
+  gap: 2rem;
 } 
+
+.parent-card{
+  background-color: #cac7ff;
+  width: 30%;
+  color: black;
+}
 
 ::placeholder {
   color:#f3f3f3;
@@ -109,35 +114,6 @@ margin: 2px 20px 12px 10px ;
   background: #2b335f;
   cursor: pointer;
 }
-.parent-card > ul {
-  max-height: 20rem;
-  overflow-y: auto;
-  padding-left: 0;
-  list-style: none;
-}
 
-.parent-card > span {
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.parent-card > ul > li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  background-color: #f3f3f3;
-  padding: 0.5rem;
-  margin-right: 0.5em;
-  margin-bottom: 0.7rem;
-  border-radius: 0.5rem;
-  box-shadow: 0px 2px rgba(107, 107, 107, 0.63);
-}
-
-.parent-card > ul > li > span {
-  letter-spacing: 0.7rem;
-}
 
 
