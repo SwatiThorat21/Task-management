@@ -75,12 +75,13 @@ input[type="text"]:focus {
   background-color: #cac7ff;
   width: 30%;
   color: black;
-  height: 50vh;
+  height: 80vh;
 }
 .parent-card ul{
   list-style: none;
-  
+   
 }
+
 .plus-button{
   border: none;
   padding: 0.5rem 0.8rem;
@@ -95,6 +96,15 @@ input[type="text"]:focus {
 }
 h2{
   margin-left: 0.5rem;
+}
+
+.li-element {
+border: 1px solid blueviolet;
+background-color: rgb(184, 202, 219);
+list-style: none;
+padding: 0.4rem;
+margin: 0.5rem;
+
 }
 
 ::placeholder {
