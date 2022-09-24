@@ -1,17 +1,24 @@
-let hamburgerBtn = document.getElementById("hamburger-btn");
-let hamburgerMenu = document.getElementById("hamburger");
-let sidebarClose = document.getElementById("sidebar-close");
+let addCardBtn = document.getElementById('add-card-button');
 
-function toggleMenu() {
-  if (hamburgerMenu.classList.contains("showMenu"))
-    hamburgerMenu.classList.remove("showMenu");
-  else {
-    hamburgerMenu.classList.add("showMenu");
-  }
-
-  // hamburgerBtn.style.display = "block";
+addCardBtn.addEventListener('click', ()=>{
+let addInput = document.getElementById('addInput');
+if(addInput.value == ""){
+  alert('Please add a task!!');
 }
+let list = localStorage.getItem("list");
+if (list == null) {
+  listArray = [];
+} else {
+  listArray = JSON.parse(list);
+}
+listArray.push(addInput.value);
+localStorage.setItem("list", JSON.stringify(listArray));
 
-hamburgerBtn.addEventListener("click", toggleMenu);
-sidebarClose.addEventListener("click", toggleMenu);
+addInput.value = "";
+showList();
+});
+
+function showList(){
+ 
+}
 

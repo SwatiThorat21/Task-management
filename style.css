@@ -24,10 +24,6 @@ body {
   background-color: rgb(22, 22, 48);
   padding-top: 1rem;
 }
-#hamburger-btn {
-  font-size: 2rem;
-  cursor: pointer;
-}
 
 #header-title {
   text-align: center;
@@ -45,64 +41,6 @@ body {
   margin-top: 0.6rem;
 }
 
-.hamburger, .showMenu {
-    height: 100%;
-    width: 18%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #414061;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 4rem;
-
-}
-
-.hamburger p.board-title {
-  font-size: 1.5rem;
-  color:white;
-  display: block;
-  transition: 0.3s;
-  text-align: center;
-}
-
-.hamburger > ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.hamburger > ul > li {
-  font-size: 1rem;
-  color: black;
-  background-color: #f3f3f3;
-  padding: 0.5rem;
-  margin-inline: 1em;
-  margin-bottom: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 3px 3px rgb(105, 65, 65);
-}
-
-.hamburger > ul > li.is-active {
-  box-shadow: 3px 3px yellow;
-}
-
-.hamburger > ul > li:hover {
-  color: rgb(55, 55, 108);
-  cursor: pointer;
-  box-shadow: 3px 3px yellow;
-}
-
-.hamburger #sidebar-close {
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 2.25rem;
-  margin-left: 50px;
-}
-
 input[type="text"] {
   border: none;
   border-bottom: 2px solid black;
@@ -115,34 +53,6 @@ input[type="text"]:focus {
   border: none;
   border-bottom: 2px solid black;
   outline: none;
-}
-
-#add-board-button {
-  border: none;
-  font-size: 1rem;
-  border-radius: 1rem;
-  background-color: rgb(50, 50, 76);
-  color: rgb(220, 197, 197);
-  padding: 0.5em 1em;
-  box-shadow: 0px 2px rgb(32, 32, 32);
-  margin-bottom: 2rem;
-}
-
-#add-board-button:hover {
-  cursor: pointer;
-  color: white;
-  box-shadow: 0px 2px rgb(220, 197, 197);
-}
-
-#add-board-text {
-  width:100%;
-  color:white;
-}
-.add-board {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.5rem;
 }
 
 .container {
@@ -199,9 +109,6 @@ margin: 2px 20px 12px 10px ;
   background: #2b335f;
   cursor: pointer;
 }
-
-
-
 .parent-card > ul {
   max-height: 20rem;
   overflow-y: auto;

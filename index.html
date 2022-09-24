@@ -21,22 +21,9 @@
     <div class="bg-container">
       <header>
         <div class="header">
-          <div id="hamburger-btn">&#9776;</div>
           <h1 id="header-title">Task Management App</h1>
           <div class="header-icons">
-            <i
-              title="Delete this board."
-              id="delete-btn"
-              class="fa fa-trash"
-            ></i>
-            <i
-              title="Save all boards."
-              id="save-btn"
-              class="fa-solid fa-floppy-disk"
-            ></i>
-            <!-- <i title="Settings" id="settings-btn" class="fa fa-gear"></i> -->
-
-            <form action="" class="searchBar">
+              <form action="" class="searchBar">
               <input type="text" placeholder="Search...." />
               <button type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -45,25 +32,6 @@
           </div>
         </div>
       </header>
-
-      <div id="hamburger" class="hamburger">
-        <span id="sidebar-close">&times;</span>
-        <p class="board-title">Add a Task Boards</p>
-        <ul id="boards-list">
-          <!-- Boards will be listed here... -->
-        </ul>
-
-        <div class="add-board">
-          <input
-            type="text"
-            id="add-board-text"
-            name="add-board"
-            placeholder="Add Board..."
-          />
-          <button id="add-board-button">Add Board</button>
-        </div>
-        
-      </div>
 
       <!-- <div id="card-context-menu" class="context-menu"> -->
       <!-- Right-click context menu on cards. -->
@@ -80,7 +48,7 @@
             <input
               maxlength="128"
               type="text"
-              id="add-card-text"
+              id="add-input"
               name="add-card"
               placeholder="Add Card..."
               autofocus
