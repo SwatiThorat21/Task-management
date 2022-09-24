@@ -46,7 +46,9 @@ input[type="text"] {
   border-bottom: 2px solid black;
   font-size: 1em;
   background-color: transparent;
-  color: #f3f3f3;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  width: 85%;
 }
 
 input[type="text"]:focus {
@@ -73,10 +75,30 @@ input[type="text"]:focus {
   background-color: #cac7ff;
   width: 30%;
   color: black;
+  height: 50vh;
+}
+.parent-card ul{
+  list-style: none;
+  
+}
+.plus-button{
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+  background-color: #2b335f;
+  color: white;
+  font-size: 1.2rem;
+}
+.plus-button:hover{
+  background-color: #343f7a;
+  cursor: pointer;
+}
+h2{
+  margin-left: 0.5rem;
 }
 
 ::placeholder {
-  color:#f3f3f3;
+  color:black;
   font-family:"Ubuntu", sans-serif;
 }
 
