@@ -32,12 +32,12 @@ function showList1() {
   let html = "";
   listArray.forEach((task) => {
     html += `
-    <div class="li-element">
-    <li>${task}</li>
-    </div>
+   
+    <li class="li-item">${task}</li>
+  
      `;
   });
-  let taskList = document.getElementById("taskList1");
+  let taskList = document.querySelector(".taskList");
   taskList.innerHTML = html;
 }
 
@@ -74,10 +74,10 @@ function showList2() {
   let html = "";
   listArray.forEach((task) => {
     html += `
-    <li>${task}</li>
+    <li class="li-item">${task}</li>
      `;
   });
-  let taskList = document.getElementById("taskList2");
+  let taskList = document.querySelector(".taskList");
   taskList.innerHTML = html;
 }
 
@@ -115,9 +115,34 @@ function showList3() {
   let html = "";
   listArray.forEach((task) => {
     html += `
-    <li>${task}</li>
+    <li class="li-item">${task}</li>
      `;
   });
-  let taskList = document.getElementById("taskList3");
+  let taskList = document.querySelector(".taskList");
   taskList.innerHTML = html;
 }
+
+let liItem = document.querySelectorAll(".li-item");
+liItem.forEach((draggable) => {
+  draggable.addEventListener("dragstart", () => {
+    draggable.classList.add("dragging");
+  });
+
+  draggable.addEventListener("dragend", () => {
+    draggable.classList.remove("dragging");
+  });
+});
+
+let taskList = document.querySelector(".taskList");
+taskList.forEach((taskList) => {
+  taskList.addEventListener("dragover", (e) => {
+    e.prevetDefault();
+    let afterList = getDragAfterList(taskList, e.clientY);
+    let draggable = document.querySelector(".dragging");
+    if (afterList == null) {
+      taskList.appendChild(draggable);
+    } else {
+      taskList.insertBefore(draggable, afterList);
+    }
+  });
+});

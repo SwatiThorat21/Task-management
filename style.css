@@ -98,13 +98,16 @@ h2{
   margin-left: 0.5rem;
 }
 
-.li-element {
+.li-item {
 border: 1px solid blueviolet;
 background-color: rgb(184, 202, 219);
 list-style: none;
 padding: 0.4rem;
 margin: 0.5rem;
+}
 
+.li-item.dragging{
+  opacity: 0.5;
 }
 
 ::placeholder {
