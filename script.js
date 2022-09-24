@@ -133,7 +133,7 @@ liItem.forEach((draggable) => {
   });
 });
 
-let taskList = document.querySelector(".taskList");
+let taskList = document.querySelectorAll(".taskList");
 taskList.forEach((taskList) => {
   taskList.addEventListener("dragover", (e) => {
     e.prevetDefault();
@@ -146,3 +146,20 @@ taskList.forEach((taskList) => {
     }
   });
 });
+
+function getDragAfterList(taskList, y) {
+  let draggableList = [...taskList.querySelectorAll(".liItem:not(.dragging)")];
+
+  return draggableList.reduce(
+    (closest, child) => {
+      let box = child.getBoundingClientRect();
+      let offset = y - box.top - box.height / 2;
+      if (offset < 0 && offset > closest.offset) {
+        return { offset: offset, element: child };
+      } else {
+        return closest;
+      }
+    },
+    { offset: Number.NEGATIVE_INFINITY }
+  ).element;
+}
