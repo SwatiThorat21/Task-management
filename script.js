@@ -33,7 +33,7 @@ function showList1() {
   listArray.forEach((task) => {
     html += `
    
-    <li class="li-item">${task}</li>
+    <li class="li-item" draggable="true">${task}</li>
   
      `;
   });
@@ -74,7 +74,7 @@ function showList2() {
   let html = "";
   listArray.forEach((task) => {
     html += `
-    <li class="li-item">${task}</li>
+    <li class="li-item" draggable="true">${task}</li>
      `;
   });
   let taskList = document.querySelector(".taskList");
@@ -115,7 +115,7 @@ function showList3() {
   let html = "";
   listArray.forEach((task) => {
     html += `
-    <li class="li-item">${task}</li>
+    <li class="li-item" draggable="true">${task}</li>
      `;
   });
   let taskList = document.querySelector(".taskList");
@@ -133,13 +133,13 @@ liItem.forEach((draggable) => {
   });
 });
 
-let taskList = document.querySelectorAll(".taskList");
-taskList.forEach((taskList) => {
+let taskLists = document.querySelectorAll(".taskList");
+taskLists.forEach((taskList) => {
   taskList.addEventListener("dragover", (e) => {
-    e.prevetDefault();
+    // e.prevetDefault();
     let afterList = getDragAfterList(taskList, e.clientY);
     let draggable = document.querySelector(".dragging");
-    if (afterList == null) {
+    if (!afterList) {
       taskList.appendChild(draggable);
     } else {
       taskList.insertBefore(draggable, afterList);
