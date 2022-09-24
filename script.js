@@ -1,7 +1,7 @@
 let addCardBtn = document.getElementById('add-card-button');
 
 addCardBtn.addEventListener('click', ()=>{
-let addInput = document.getElementById('addInput');
+let addInput = document.getElementById('add-input');
 if(addInput.value == ""){
   alert('Please add a task!!');
 }
