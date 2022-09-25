@@ -47,7 +47,7 @@ addBtn2.addEventListener("click", addTask2);
 function addTask2() {
   let addInput = document.getElementById("task-2");
   if (addInput.value == "") {
-    alert("Please add a task!!");
+   return alert("Please add a task!!");
   }
   let listArray;
   let list = localStorage.getItem("taskList2");
@@ -87,7 +87,7 @@ addBtn3.addEventListener("click", addTask3);
 function addTask3() {
   let addInput = document.getElementById("task-3");
   if (addInput.value == "") {
-    alert("Please add a task!!");
+   return alert("Please add a task!!");
   }
   let listArray;
   let list = localStorage.getItem("taskList3");
