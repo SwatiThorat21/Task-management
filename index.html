@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -38,7 +38,7 @@
               <h2 class="h2">Backlog</h2>
               <input type="text" class="add-task" id="task-1" name="add-task" placeholder="Add Task...">
               <button class="plus-button" id="add-btn1">+</button>
-              <ul class="taskList">
+              <ul class="taskList" id="taskList1" ondrop="drop(event)" ondragover="allowDrop(event)">
               
               </ul>
               
@@ -47,7 +47,7 @@
               <h2 class="h2">To Do Today</h2>
               <input type="text" class="add-task" id="task-2" name="add-task" placeholder="Add Task...">
               <button class="plus-button" id="add-btn2">+</button>
-              <ul class="taskList">
+              <ul class="taskList" id="taskList2" ondrop="drop(event)" ondragover="allowDrop(event)">
                 
               </ul>
             </div>
@@ -55,8 +55,7 @@
               <h2 class="h2">Done Today</h2>
               <input type="text" class="add-task" id="task-3" name="add-task" placeholder="Add Task...">
               <button class="plus-button" id="add-btn3">+</button>
-              <ul class="taskList">
-                <li></li>
+              <ul class="taskList" id="taskList3" ondrop="drop(event)" ondragover="allowDrop(event)">
               </ul>
             </div>
           </div>

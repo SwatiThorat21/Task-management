@@ -79,7 +79,7 @@ input[type="text"]:focus {
 }
 .parent-card ul{
   list-style: none;
-   
+  height: 100%;
 }
 
 .plus-button{
